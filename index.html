@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Non-Metal Information Finder</title>
+    <title>Weather Instruments Information Board</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,7 +13,8 @@
 
     <style>
         body {
-            background-image: url('https://i.pinimg.com/736x/b0/b1/81/b0b181c730e10d106eaded3c195cd1ab.jpg');
+            background-image: url('https://cdn.cosmos.so/962a64bc-897a-4651-9972-71322eea4398?format=webp');
+            background-size: cover;
             color: #f3f0ff;
             font-family: Arial, Helvetica, sans-serif;
             min-height: 100vh;
@@ -43,7 +44,7 @@
         }
 
         .card {
-            background-color: #0f8627;
+            background-color: #074213bc;
             border: 1px solid #001a06;
             border-radius: 12px;
             padding: 24px;
@@ -69,7 +70,7 @@
         }
 
         .resultbox {
-            background-color: #117906;
+            background-color: #093c03b5;
             border: 1px solid #0d6d1e;
             border-left: 4px solid #105d0f;
             border-radius: 8px;
@@ -96,43 +97,44 @@
     <div class="main-container">
 
         <div class="text-center mb-4">
-            <h2 class="titlething mb-1">Non-metal Finder</h2>
-            <div class="smalltext">Periodic Table Information</div>
+            <h2 class="titlething mb-1">Weather Instrument Finder</h2>
+            <div class="smalltext">Find the information of any Weather Instrument</div>
         </div>
+
 
         <div class="card mb-4">
             <div class="mb-3">
                 <input
                     type="text"
-                    id="Element1"
+                    id="Instrument1"
                     class="form-control form-control-custom"
-                    placeholder="Enter element symbol."
+                    placeholder="Enter a weather instrument."
                 >
             </div>
 
-            <button
-                id="btn-submit"
-                class="btn btn-success w-100"
-                py-click="search_element">
-                Identify Element
-            </button>
+        <button
+        id="btn-submit"
+        class="btn btn-success w-100"
+        py-click="search_instrument">
+        Identify Weather Instrument
+        </button>
         </div>
 
         <div class="resultbox mb-3">
             <p class="resulttext">
-                <b>Element Symbol:</b> <span id="symbol">-</span>
+                <b>Weather Instrument:</b> <span id="Instrument">-</span>
             </p>
 
             <p class="resulttext">
-                <b>Element Name:</b> <span id="name">-</span>
+                <b>Measures:</b> <span id="Measures">-</span>
             </p>
 
             <p class="resulttext">
-                <b>Atomic Number:</b> <span id="atomnumber">-</span>
+                <b>Unit of Measurement:</b> <span id="Unit">-</span>
             </p>
 
             <p class="resulttext mb-0">
-                <b>Atomic Mass:</b> <span id="mass">-</span>
+                <b>Purpose:</b> <span id="Purpose">-</span>
             </p>
         </div>
 
@@ -146,3 +148,4 @@
 
 </body>
 </html>
+
